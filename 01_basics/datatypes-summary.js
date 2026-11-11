@@ -35,7 +35,7 @@ const myFunction = function(){
     console.log("hello world")
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 // Return type of variables in JavaScript
 // 1) Primitive Datatypes
@@ -51,4 +51,35 @@ console.log(typeof myFunction);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (Primitive), Heap(Non-Primitive) 
+// whenever we use  stack memory it means whatever variable we declared uski we get a copy
+// when we use Heap memory then we get reference of the declared variable (jo bhi change karenge vo original value of change hoga)
+
+
+let myYoutubename = "hiteshchoudhary.com"
+
+let anothername = myYoutubename
+anothername= "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email :"user@google.com",
+    upi :"user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email="hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
 
